@@ -9,7 +9,7 @@ class User(AbstractBaseUser):
     email = models.EmailField(unique=True)
     is_owner = models.BooleanField(default=True)
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = "email"
 
     def __str__(self) -> str:
         return self.email
@@ -24,7 +24,7 @@ class Group_Permissions(models.Model):
     group = models.ForeignKey(Group, on_delete=models.CASCADE)
     permission = models.ForeignKey(Permission, on_delete=models.CASCADE)
 
+
 class User_Groups(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     group = models.ForeignKey(Group, on_delete=models.CASCADE)
-
