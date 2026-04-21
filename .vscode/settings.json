@@ -1,0 +1,18 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.languageServerMode": "full",
+  "python.analysis.extraPaths": [
+    ".",
+    "./core"
+  ],
+  "python.terminal.activateEnvironment": true,
+
+  "editor.formatOnSave": true,
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
